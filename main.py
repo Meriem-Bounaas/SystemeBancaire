@@ -10,4 +10,5 @@ if __name__ == '__main__':
     banque.creation_compte(client2, 8900, 'mimibou', 'pass2')
     print(banque)
     print(client1)
+    print(client2)
     banque.affichage_detail_client(1)
