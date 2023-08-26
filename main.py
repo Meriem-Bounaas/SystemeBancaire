@@ -4,8 +4,10 @@ from client import Client
 
 if __name__ == '__main__':
     banque = Banque('BNP')
-    client = Client(1, 'lucy', 'tchiwawa')
-    banque.creation_compte(client, 2000, 'usernas', 'pass')
+    client1 = Client(1, 'lucy', 'tchiwawa')
+    client2 = Client(2, 'mimi', 'bounaas')
+    banque.creation_compte(client1, 2000, 'lucycli', 'pass1')
+    banque.creation_compte(client2, 8900, 'mimibou', 'pass2')
     print(banque)
-    # print(client)
+    print(client1)
     banque.affichage_detail_client(1)
